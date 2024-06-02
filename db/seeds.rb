@@ -11,6 +11,8 @@ user = User.where(email: "follen@gmail.com" ).first_or_initialize
 user.update!( password: "password", password_confirmation: "password")
 
 100.times do |i| 
-    BlogPost.create(title: "Blog Post #{i}", content: "This is the content of blog post #{i}")
+    blog_post = BlogPost.new(title: "Blog Post #{i}", content: "This is the content of blog post #{i}")
+    blog_post.published_at =  [nil, Time.now, Time.now + 1.day, Time.now - 1.day].sample
+    blog_post.save!
     puts "Created Blog Post #{i}"
 end
