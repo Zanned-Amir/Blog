@@ -9,3 +9,8 @@
 #   end
 user = User.where(email: "follen@gmail.com" ).first_or_initialize
 user.update!( password: "password", password_confirmation: "password")
+
+100.times do |i| 
+    BlogPost.create(title: "Blog Post #{i}", content: "This is the content of blog post #{i}")
+    puts "Created Blog Post #{i}"
+end
