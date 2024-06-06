@@ -1,24 +1,20 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Introduction
 
-* Ruby version
+This README outlines a blog application built using Ruby on Rails with the following features:
 
-* System dependencies
+- Authentication with Devise
+- Styling with Tailwind CSS
+- CRUD operations for posts
+- Pagination with Pagy
+- Rich text handling and image uploads using ActionText and Active Storage
 
-* Configuration
+## Features
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- **Authentication**: Users can sign up, sign in, and sign out securely.
+- **Styling**: Utilizes Tailwind CSS for responsive design.
+- **CRUD Operations**: Users can create, read, update, and delete blog posts.
+- **Pagination**: Paginates posts for better user experience.
+- **Rich Text and Image Uploads**: ActionText with Active Storage for handling text and images.
+- **Post Scheduling**: Supports three types of posts: Draft, Scheduled, and Posted.
